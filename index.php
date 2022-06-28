@@ -101,9 +101,29 @@ foreach ($answer as $question) { ?>
 ?>
 
 <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
 #container{
-    width: 60%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 10px auto;
+    
+}
+ul{
+    list-style-type: none;
+    margin-bottom: ;
+}
+
+li{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+h2{
+    font-size: 28px;
 }
 </style>
 
