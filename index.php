@@ -89,19 +89,21 @@ $answer = [
 		],
 ];
 
-var_dump($answer);
+
+// facciamo un ciclo nel array per stampare tutti i contenuti
+foreach ($answer as $question) { ?>
+<div id="container">
+    <div class="box_request"><?= $question["request"] ?></div>
+    <div class="box_reply"><?= $question["reply"] ?></div>
+</div><?php
+    
+}
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<div id="container">
-</div>  
-</body>
-</html>
+<style>
+#container{
+    width: 60%;
+    margin: 0 auto;
+}
+</style>
+
